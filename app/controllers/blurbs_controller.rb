@@ -8,4 +8,15 @@ class BlurbsController < ApplicationController
     @blurb = Blurb.new
   end
 
+  def create
+    Blurb.create(blurbs_params)
+    redirect_to root_path
+  end
+
+private
+  def blurbs_params
+    params.require(:blurb).permit(:title, :details)
+    
+  end
+
 end
