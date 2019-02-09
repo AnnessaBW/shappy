@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+<h1>What makes you Super Happy?</h1>
+    <%= simple_form_for @blurb do |f| %>
+    <%= f.input :title %>
+    <%= f.input :details %>
+    <br />
+    <%= f.submit 'Shappy Me!', class: btn btn-primary %>
+  <% end %>
+</div>
