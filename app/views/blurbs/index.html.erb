@@ -10,11 +10,13 @@ h1 {
 <body>
  
 <h1>Welcome to Shappy!</h1>
+<h2>What makes you super happy?</h2>
+<br />
 
 <% @blurbs.each do |blurb| %>
   <div>
     <h2><%= blurb.title %></h2>
-    <p> <%= place.details %></p>
+    <p> <%= blurb.details %></p>
     <br/>
   </div>
     <hr />
