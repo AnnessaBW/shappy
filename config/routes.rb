@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'shappys#index'
+  root 'blurbs#index'
 end
