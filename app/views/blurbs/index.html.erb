@@ -10,6 +10,15 @@ h1 {
 <body>
  
 <h1>Welcome to Shappy!</h1>
+
+<% @blurbs.each do |blurb| %>
+  <div>
+    <h2><%= blurb.title %></h2>
+    <p> <%= place.details %></p>
+    <br/>
+  </div>
+    <hr />
+<% end %>
  
 </body>
 </html>

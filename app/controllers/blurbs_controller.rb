@@ -1,5 +1,6 @@
 class BlurbsController < ApplicationController
 
-  def index  
+  def index 
+   @blurbs = Blurb.all
   end
 end
